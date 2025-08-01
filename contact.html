@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Shehan's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo"><a href="Shehan_Gunawardhana_CV.pdf" class="btn" download>Download CV</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <h2>Contact Me</h2>
+      <p class="contact-intro">
+        Feel free to reach out to me by filling the form below.
+      </p>
+
+      <form class="contact-form" id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <input type="text" id="subject" placeholder="Subject" required />
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+        <p class="form-response" id="formResponse"></p>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Shehan Gunawardhana</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
