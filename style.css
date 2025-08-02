@@ -6,7 +6,8 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -100,7 +101,7 @@ body {
 .hero-img:hover {
   transform: scale(1.08);
   box-shadow: 0 0 20px rgba(108, 140, 255, 0.3),
-              0 0 40px rgba(108, 140, 255, 0.2);
+    0 0 40px rgba(108, 140, 255, 0.2);
 }
 
 /* Skills */
@@ -163,7 +164,7 @@ body {
 .skill-box:hover {
   transform: scale(1.08);
   box-shadow: 0 0 20px rgba(108, 140, 255, 0.3),
-              0 0 40px rgba(108, 140, 255, 0.2);
+    0 0 40px rgba(108, 140, 255, 0.2);
 }
 
 .skill-box:nth-child(2) {
@@ -183,6 +184,80 @@ body {
   color: #b0b0b0;
   font-size: 0.95rem;
 }
+
+.projects,
+.gallery {
+  padding: 40px 20px;
+  background: linear-gradient(180deg, #1a1a1a, #121212);
+  color: #e0e0e0;
+}
+
+.projects h2,
+.gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #6c8cff; /* Blue */
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project-card {
+  background-color: #1e1e1e;
+  border-radius: 14px;
+  width: 320px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #333;
+}
+
+.project-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-content h3 {
+  color: #6c8cff;
+  margin-bottom: 10px;
+}
+
+.project-content p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.project-content .btn {
+  padding: 8px 16px;
+  background: #6c8cff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.project-content .btn:hover {
+  background: #1ec3ff;
+}
+
 
 @keyframes fadeInUp {
   to {
