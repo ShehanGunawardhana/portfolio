@@ -1,8 +1,4 @@
-// Just for future use or interaction animations
-window.addEventListener("DOMContentLoaded", () => {
-  console.log("Welcome to Shehan's Portfolio");
-});
-
+// validations and response handling for the contact form
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contactForm");
   const response = document.getElementById("formResponse");
@@ -25,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     response.style.color = "#00ff99";
     response.textContent = "Thank you! Your message has been received.";
 
-    form.reset(); // Clear the form
+    // Clear the form
+    form.reset(); 
   });
 });
